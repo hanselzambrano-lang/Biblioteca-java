@@ -1,7 +1,11 @@
 package com.biblioteca;
+import com.biblioteca.usuarios.Usuario;
 
 public class Main {
     public static void main(String[] args) {
+        Usuario usuario = new Usuario("Camila",18,"tucamilacrazy@gmail.com","estudiante");
+        usuario.mostrarInfo();
+
         Libro libro = new Libro("El Quijote","Cervantes","1234567890123");
         System.out.println("Libro creado exitosamente");
 
