@@ -17,7 +17,7 @@ public class Usuario {
             System.out.println("Nombre: "+nombre);
             System.out.println("Edad: "+edad);
             System.out.println("Email: "+email);
-            System.out.println("Tipo: "+tipoUsuario);
+            System.out.println("Tipo de Usuario: "+tipoUsuario);
         }
 
         //getters de Usuario

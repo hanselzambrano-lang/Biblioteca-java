@@ -15,6 +15,7 @@ public class Main {
         System.out.println("Nombre obtenido: "+nombreActual);
         System.out.println("Edad obtenido: "+edadActual);
         System.out.println("Email obtenido: "+emailActual);
+        System.out.println("Tipo de Usuario: "+tipoUsuarioActual);
 
         System.out.println("\n//----Usando SETTERS----//");
         usuario.setNombre("Camila Zambrano");
