@@ -1,7 +1,6 @@
 package com.biblioteca.usuarios;
 
-
-    public class Usuario {
+public class Usuario {
         private String nombre;
         private int edad;
         private String email;
@@ -20,6 +19,34 @@ package com.biblioteca.usuarios;
             System.out.println("Email: "+email);
             System.out.println("Tipo: "+tipoUsuario);
         }
+
+        //getters de Usuario
+        public String getNombre() {
+            return nombre;
+        }
+        public int getEdad() {
+            return edad;
+        }
+        public String getEmail() {
+            return email;
+        }
+        public String getTipoUsuario() {
+            return tipoUsuario;
+        }
+
+        //setters de Usuario
+        public void setNombre(String nombre) {this.nombre = nombre;}
+        public void setEdad(int edad){
+            this.edad = edad;
+        }
+        public void setEmail(String email) {
+            this.email = email;
+        }
+        public void setTipoUsuario(String tipoUsuario) {this.tipoUsuario = tipoUsuario;}
+
+
+
+
     }
 
 

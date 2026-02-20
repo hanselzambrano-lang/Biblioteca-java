@@ -1,14 +1,35 @@
 package com.biblioteca;
 import com.biblioteca.usuarios.Usuario;
-
 public class Main {
     public static void main(String[] args) {
+        //------------------------ Instancia Objeto Usuario-------------------------------------------------------------------
         Usuario usuario = new Usuario("Camila",18,"tucamilacrazy@gmail.com","estudiante");
         usuario.mostrarInfo();
+        //---------------------Usuario-----------------------------------------//
+        System.out.println("\n//----Usando GETTERS----//");
+        String nombreActual = usuario.getNombre();
+        int edadActual = usuario.getEdad();
+        String emailActual = usuario.getEmail();
+        String tipoUsuarioActual = usuario.getTipoUsuario();
 
+        System.out.println("Nombre obtenido: "+nombreActual);
+        System.out.println("Edad obtenido: "+edadActual);
+        System.out.println("Email obtenido: "+emailActual);
+
+        System.out.println("\n//----Usando SETTERS----//");
+        usuario.setNombre("Camila Zambrano");
+        usuario.setEdad(19);
+        usuario.setEmail("camila.nuevocorreo@gmail.com");
+        usuario.setTipoUsuario("Estudiante");
+
+        System.out.println("\n//----Usuario Modificado----//");
+        usuario.mostrarInfo();
+
+        //---------------------------Instancia Objeto Libro------------------------------------------
         Libro libro = new Libro("El Quijote","Cervantes","1234567890123");
         System.out.println("Libro creado exitosamente");
 
+        //------------------------------Libro-------------------------------------------//
         //info con getters
         String titulo = libro.getTitulo();
         String autor = libro.getAutor();
